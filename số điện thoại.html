@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Validate Numberphone</title>
+</head>
+
+<body>
+<script>
+    function isValidateNumberphone(str) {
+        regexp = /^[(][0-9]+[0-9][)]*-[(][0-9]{10}[)]$/;
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let pN = "(084)-(0943875984)";
+    alert(isValidateNumberphone(pN));
+</script>
+</body>
+
+</html>
+</html>

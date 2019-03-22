@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+<body>
+    <script>
+        function account(str) {
+            var ac = /^[_a-z0-9]{6,}$/;
+            if (ac.test(str)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var acc = "123abc_";
+        alert(account(acc));
+
+        var acc1 = "_abc123";
+        alert(account(acc1));
+
+        var acc2 = "@";
+        alert(account(acc2));
+
+        var acc3 = "12345";
+        alert(account(acc3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function email(str) {
+            ttr = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[a-za-z0-9]+)$'/;
+            if (ttr.test(str)) {
+                return true;
+            } else {
+                return false;
+            };
+
+        };
+        var gmail = "a@gmail.com";
+        alert(email(gmail));
+        var gmail = 'ab@yahoo.com';
+        alert(email(gmail));
+        var gmail = 'abc@hotmail.com';
+        alert(email(gmail));
+        var gmail = '@gmail.com';
+        alert(email(gmail));
+        var gmail = 'ab@gmail.';
+        alert(email(gmail));
+
+
+    </script>
+</body>
+</html>

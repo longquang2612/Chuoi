@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myBirthday = new Date(2000, 4, 7, 5, 30, 15);
+    let currentTime = new Date();
+    let yearHadLive = currentTime.getFullYear()-myBirthday.getFullYear();
+    let monthHadLive = currentTime.getMonth()-myBirthday.getMonth()+12*yearHadLive;
+    let dayHadLive = currentTime.getDay()-myBirthday.getDay()+ 365*yearHadLive;
+    let hourHadLive = currentTime.getHours() -myBirthday.getHours() + 24*365*yearHadLive;
+    let minutesHadLive = currentTime.getMinutes() -myBirthday.getMinutes() + 60*365*yearHadLive;
+    let secondsHadLive = currentTime.getSeconds() -myBirthday.getSeconds() + 60*60*365*yearHadLive;
+    alert("Tôi đã sống " + yearHadLive + " năm");
+    alert("Tôi đã sống " + monthHadLive + " tháng");
+    alert("Tôi đã sống " + dayHadLive + " ngày");
+    alert("Tôi đã sống " + hourHadLive + " giờ");
+    alert("Tôi đã sống " + minutesHadLive + " phút");
+    alert("Tôi đã sống " + secondsHadLive + " giây");
+</script>
+</body>
+</html>
